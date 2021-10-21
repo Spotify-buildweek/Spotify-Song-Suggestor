@@ -1,6 +1,6 @@
 ![Spotify_Logo_CMYK_Green](https://user-images.githubusercontent.com/86321131/137929977-3d67a2a3-96ce-4078-8fcc-2a331e03321a.png)
 # Spotify-Song-Suggestor
-Our goal with this project........
+Our goal with this project is to create an interactive app where a user inputs their favorite song/artist. Based on that input feedback is given to recommend similar songs to their input....to the nearest 5 songs.
 # App Instructions
 # Methods Used
 # Licenense
@@ -25,5 +25,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-# Credits
