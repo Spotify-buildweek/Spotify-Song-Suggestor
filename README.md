@@ -2,6 +2,7 @@
 # Spotify-Song-Suggestor
 Our goal with this project is to create an interactive app where a user inputs their favorite song/artist. Based on that input feedback is given to recommend similar songs to their input....to the nearest 5 songs.
 # App Instructions
+After clicking the link to the app, navigate to the search engine, from that search engine you will then enter your favorite artist or song. After inputing your results you will now discover new songs to the nearest five to listen to...Music awaits
 # Methods Used
 # Licenense
 MIT License
