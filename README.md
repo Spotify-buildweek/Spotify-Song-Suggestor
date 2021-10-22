@@ -1,14 +1,49 @@
 ![Spotify_Logo_CMYK_Green](https://user-images.githubusercontent.com/86321131/137929977-3d67a2a3-96ce-4078-8fcc-2a331e03321a.png)
-# Spotify-Song-Suggestor
+# Spotify Song Suggestor
+***What is Spotify?
+Spotify is a audio and media streaming service that offer a variety of plans to suit your listening needs. This service has over 365 million monthly active users with over 70 million songs to stream.***
+
 Our goal with this project is to create an interactive app where a user inputs their favorite song/artist. Based on that input feedback is given to recommend similar songs to their input....to the nearest 5 songs.
 # **[Our Website](https://spotify-suggest-it.herokuapp.com/)**
-Click the link above to view the spotify song suggestor
+Click the link above to view the spotify song suggestor...***Music awaits get groovy!***
 
 # App Instructions
-After clicking the link to the app, navigate to the search engine, from that search engine you will then enter your favorite artist or song. After inputing your results you will now discover new songs to the nearest five as well check the metrics of each song...Music awaits get groovy!
+After clicking the link to the app, navigate to the search engine, from that search engine you will then enter your favorite artist or song. After inputing your results you will now discover new songs to the nearest five as well check the metrics of each song.
 # Methods
 Data was collected via kaggle from this **[link](https://www.kaggle.com/geomack/spotifyclassification)**
 With the use of the Nearest Neigbor model, and an API, our app will make predictions to the nearest five similar songs.
+# KNN Model
+Libraries used:
+Pandas,
+Numpy,
+Sklearn,
+Pickle,
+
+How the dataset was wrangled:
+```sh
+def wrangle(df):
+    # Drop columns not in use by nearest-neighbors 
+    df.drop(columns=['type', 'id', 'track_href', 'analysis_url', 'title', 'Unnamed: 0'], inplace=True)
+    
+    # Drop unuseful audio features
+    df.drop(columns=['instrumentalness', 'time_signature'], inplace=True)
+    
+    # Drop genre, might not work well with nearest-neighbors and does not appear in spotify api request
+    df.drop(columns=['genre'], inplace=True)
+    
+    # Making a pool of songs to use as query items
+    test_df = df[df['song_name'].isna() == True]
+    
+    # Dropping rows without song_names, maybe we can keep them if we implement the api calls
+    df = df[df['song_name'].isna() == False]
+    
+    # Drop song-name, not used in nearest-neighbors
+    df.drop(columns=['song_name'], inplace=True)
+    test_df.drop(columns=['song_name'], inplace=True)
+    
+    
+    return df
+```
 # Licenense
 MIT License
 
