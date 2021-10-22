@@ -12,7 +12,7 @@ After clicking the link to the app, navigate to the search engine, from that sea
 # Methods
 Data was collected via kaggle from this **[link](https://www.kaggle.com/geomack/spotifyclassification)**
 With the use of the Nearest Neigbor model, and an API, our app will make predictions to the nearest five similar songs.
-# KNN Model
+# Nearest Neighbor Model
 Libraries used:
 Pandas,
 Numpy,
@@ -43,7 +43,35 @@ def wrangle(df):
     
     
     return df
+   ```
+Use of standard scalar to remove mean and scale it to unit variance for each feature
+```sh
+scaler = Normalizer()
+scaler.fit(uq_df)
+scaled_df = scaler.transform(uq_df)
 ```
+Initiate Nearest Neighbor Estimator
+```sh
+# Instantiate nearest-neighbors estimator, n_neighbors is Number of neighbors to use by default for kneighbors queries.
+nn = NearestNeighbors(n_neighbors=5)
+# fit to our song's audio features
+nn.fit(scaled_df)
+```
+Nearest Neighbor Model Trained and Fitted
+```sh
+# NearestNeighbors is the model that is going to give us a list of the most 
+# similar songs to the searched song
+nn = NearestNeighbors(n_neighbors=6)
+nn.fit(X_train)
+
+# This shows us what songs are similar by index
+doc_index = 5
+doc = [X_train[doc_index]]
+
+# Query using kneighbors 
+neigh_dist, neigh_index = nn.kneighbors(doc)
+```
+
 # Licenense
 MIT License
 
