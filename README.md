@@ -5,13 +5,13 @@ Spotify is a audio and media streaming service that offer a variety of plans to 
 
 Our goal with this project is to create an interactive app where a user inputs their favorite song/artist. Based on that input feedback is given to recommend similar songs to their input....to the nearest 5 songs.
 # **[Our Website](https://spotify-suggest-it.herokuapp.com/)**
-Click the link above to view the spotify song suggestor...***Music awaits get groovy!***
+*Click the link above to view the spotify song suggestor...***Music awaits get groovy!****
 
 # App Instructions
-After clicking the link to the app, navigate to the search engine, from that search engine you will then enter your favorite artist or song. After inputing your results you will now discover new songs to the nearest five as well check the metrics of each song.
+After clicking the link to the app, navigate to the search engine, from that search engine you will then enter your favorite artist or song. After inputing your results you will now discover new songs to the nearest five as well check the metrics of each song, with those metrics 5 songs to the nearest metrics entered will then give back suggestions.
 # Methods
 Data was collected via kaggle from this **[link](https://www.kaggle.com/geomack/spotifyclassification)**.
-With the use of the Nearest Neigbor model, and an API, our app will make predictions to the nearest five similar songs.
+With the use of the Nearest Neigbor model, and an API, our app will make predictions to the nearest five similar songs of your likings.
 # Nearest Neighbor Model
 Libraries used:
 Pandas,
@@ -72,8 +72,8 @@ doc = [X_train[doc_index]]
 neigh_dist, neigh_index = nn.kneighbors(doc)
 ```
 
-# Licenense
-MIT License
+# License
+***MIT License***
 
 Copyright (c) 2021 Fadil Shaikh, Jafar Sakha, Mikayla Kosmala, Mohamed Mosaed, Royce Roberts
 
