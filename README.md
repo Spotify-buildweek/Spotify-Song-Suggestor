@@ -10,7 +10,7 @@ Click the link above to view the spotify song suggestor...***Music awaits get gr
 # App Instructions
 After clicking the link to the app, navigate to the search engine, from that search engine you will then enter your favorite artist or song. After inputing your results you will now discover new songs to the nearest five as well check the metrics of each song.
 # Methods
-Data was collected via kaggle from this **[link](https://www.kaggle.com/geomack/spotifyclassification)**
+Data was collected via kaggle from this **[link](https://www.kaggle.com/geomack/spotifyclassification)**.
 With the use of the Nearest Neigbor model, and an API, our app will make predictions to the nearest five similar songs.
 # Nearest Neighbor Model
 Libraries used:
