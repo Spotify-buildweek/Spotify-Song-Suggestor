@@ -1,5 +1,5 @@
 ![Spotify_Logo_CMYK_Green](https://user-images.githubusercontent.com/86321131/137929977-3d67a2a3-96ce-4078-8fcc-2a331e03321a.png)
-# Spotify Song Suggestor
+# Spotify Song Recommender
 ***What is Spotify?
 Spotify is a audio and media streaming service that offer a variety of plans to suit your listening needs. This service has over 365 million monthly active users with over 70 million songs to stream.***
 
